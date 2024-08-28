@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #AAAAAA;
+        }
+        #fileLink {
+            display: none;
+        }
+        #message {
+            color: #123456;
+        }
+    </style>
+</head>
+<body>
+    <input type="password" id="passwordField" placeholder="2015 - 2025">
+    <button onclick="cheP()">Проверить</button>
+    <p id="message"></p>
+    <a id="fileLink" href="#" target="_blank">mp3</a>
+
+    <script>
+        function cheP() {
+            var iPd = document.getElementById('passwordField').value;
+            if (iPd === atob('UGxhdHRzYnVyZyBIaWdoIFNjaG9vbA==')) {
+                var Lin1 = atob('aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbA==');
+                var Addit = atob('QWxp');
+                var fulin = Lin1 + 'e/d/1' + Addit + 'MUeQlKjC-8Clf0hI8_sr6WbIceRzU/view?usp=sharing';
+                
+                document.getElementById('fileLink').href = fulin;
+                document.getElementById('fileLink').style.display = 'block';
+                document.getElementById('message').textContent = '';
+            } else {
+                document.getElementById('message').textContent = 'Неа';
+            }
+        }
+    </script>
+<h1 style="color: #AAAAAA">stan-fox-89121a325</h1>
+</body>
+</html>
